@@ -17,8 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header title="Rick and Morty" />
-      <h1>Rick and Morty App</h1>
+      <Header />
       {characters.map((character) => (
         <Card character={character} />
       ))}

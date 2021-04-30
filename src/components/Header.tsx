@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import logo from '../ressources/logo.bmp'
 
 type HeaderProps = {
     title: string;
 }
 
 
-const Header: React.FC<HeaderProps> = ({title}) => {
+const Header: React.FC = () => {
     return (
         <HeaderBox>
-            <h1>{title}</h1>
+            <img src={logo} alt="Logo" />
         </HeaderBox>
     )
 }
